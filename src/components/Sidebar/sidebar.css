@@ -5,44 +5,67 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
-  .sidebar a {
+}
+
+.sidebar a {
     display: block;
     color: black;
     text-decoration: none;
     padding: 10px 0px;
-  }
-   
-  .sidebar a:hover{
+}
+
+.home-icon,
+.save-icon,
+.applied-icon,
+.message-icon {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.sidebar a:hover {
     background-color: #f5f5f5;
-    color:black
-  }
-  div.content {
+}
+
+.sidebar .active {
+    background-color: #f5f5f5;
+}
+
+div.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
-  }
-  .home-wrapper{
-    text-align: center;
-    margin:0
-  }
-  .home-icon{
-    font-size: 30px;
-    font-weight: 100;
-  }
-  .home-text{
-    font-size: 15px;
-  }
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: absolute;
-      bottom: 0%;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
+}
 
-  
+.home-wrapper,
+.save-wrapper,
+.applied-wrapper,
+.message-wrapper {
+    text-align: center;
+    margin: 0
+}
+
+.home-text {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar-wrapper {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .home-wrapper,
+    .save-wrapper,
+    .applied-wrapper,
+    .message-wrapper {
+        padding: 0px 25px;
+    }
+
+}
