@@ -9,7 +9,7 @@ import "./navbar.css"
 const NavBar = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg"  className="navbar">
+            <Navbar collapseOnSelect expand="md" className="navbar">
                 <Container>
                     <Navbar.Brand href="#home">DASHBOARD</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -22,6 +22,7 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            
         </>
     )
 }

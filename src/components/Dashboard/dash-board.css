@@ -1,0 +1,50 @@
+
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    
+}
+.content-wrapper{
+    padding: 20px ;
+    max-width: 1000px;
+    width:1000px
+}
+.information {
+    display: flex;
+}
+
+.company-logo {
+    margin:0 20px
+}
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.status-wrapper p{
+    width:fit-content;
+    padding:2px 15px;
+    border-radius: 10px;
+    color:red;
+    background-color: rgb(255, 208, 215);
+    
+}
+.para{
+    letter-spacing: .4px;
+    font-size: 16px;
+}
+.status{
+    font-size: 15px;
+}
+.company-name p{
+    margin: 0%;
+}
+.applied-on p{
+    font-size: 14px;
+    color:grey;
+}

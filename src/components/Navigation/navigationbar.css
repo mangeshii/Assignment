@@ -1,0 +1,16 @@
+ul li a{
+    text-decoration: none;
+    color:black;
+    margin-right: 60px;
+}
+ul li{
+    padding:20px
+}
+.nav-tabs {
+    max-width: 1000px;
+    width:1000px
+}
+.navigation-wrapper{
+    display: flex;
+    justify-content: center;
+}
