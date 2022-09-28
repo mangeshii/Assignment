@@ -1,16 +1,37 @@
 import "./navigationbar.css";
 import { Link } from 'react-router-dom';
+import { AiOutlineHome } from 'react-icons/ai'
+import { AiOutlineFileText } from 'react-icons/ai'
+import { AiOutlineMessage } from 'react-icons/ai'
+import { AiOutlineSave } from 'react-icons/ai'
 
 const NavigationBar = () => {
-    
     return (
         <>
+            <div className="wrapper">
+                <div className="header container">
+                    <h2>My jobs</h2>
+                </div>
+                <span></span>
+            </div>
             <div className="navigation-wrapper">
                 <ul className="nav nav-tabs ">
-                    <li ><Link to="/home">Home</Link></li>
-                    <li><Link to="/">Applied</Link></li>
-                    <li><Link to="/saved">Saved</Link></li>
-                    <li><Link to="/messages">Messages</Link></li>
+                    <li><Link to="/home">
+                        <span className="icon"><AiOutlineHome /></span>
+                        <span className="icon-text" >Home</span>
+                    </Link></li>
+                    <li><Link to="/">
+                        <span className="icon"><AiOutlineFileText /></span>
+                        <span className="icon-text">Applied</span>
+                    </Link></li>
+                    <li><Link to="/saved">
+                        <span className="icon"><AiOutlineSave /></span>
+                        <span className="icon-text">Saved</span>
+                    </Link></li>
+                    <li><Link to="/messages">
+                        <span className="icon"><AiOutlineMessage /></span>
+                        <span className="icon-text">Messages</span>
+                    </Link></li>
                 </ul>
             </div>
         </>

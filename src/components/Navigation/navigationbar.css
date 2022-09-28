@@ -8,9 +8,43 @@ ul li{
 }
 .nav-tabs {
     max-width: 1000px;
-    width:1000px
+    width:1000px;
+  
 }
 .navigation-wrapper{
     display: flex;
     justify-content: center;
+}
+.icon{
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .icon{
+        display:block;
+        font-size: 25px;
+    }
+    .icon-text{
+        display: none;
+    }
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul li span{
+        display: flex;
+        justify-content: space-around;
+    }
+    ul li a{
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width:350px) {
+    .nav-tabs{
+        padding: 0% !important;
+
+    }
+
 }

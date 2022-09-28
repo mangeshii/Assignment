@@ -7,17 +7,8 @@ const MainContainer = () => {
     return (
         <>
             <div className="main-container-wrapper ">
-                <NavBar />
-                {/* <div className="wrapper">
-                    <div className="header">
-                        <h2>My Jobs</h2>
-                    </div> */}
-                    <NavigationBar/>
-                    <Dashboard/>
-                {/* </div> */}
-
-                {/* <div>
-                </div> */}
+                <NavigationBar />
+                <Dashboard />
             </div>
         </>
     )

@@ -41,7 +41,7 @@ const Dashboard = () => {
     }
     return (
         <>
-            <div className="dashboard-wrapper  ">
+            <div className="dashboard-wrapper">
                 <div className="content-wrapper">
                     {data && data.map((e, i) => {
                         return (
