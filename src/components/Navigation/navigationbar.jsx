@@ -16,9 +16,9 @@ const NavigationBar = () => {
             </div>
             <div className="navigation-wrapper">
                 <ul className="nav nav-tabs ">
-                    <li><Link to="/home">
+                    <li><Link to="/jobs">
                         <span className="icon"><AiOutlineHome /></span>
-                        <span className="icon-text" >Home</span>
+                        <span className="icon-text" >Recommended Jobs</span>
                     </Link></li>
                     <li><Link to="/">
                         <span className="icon"><AiOutlineFileText /></span>

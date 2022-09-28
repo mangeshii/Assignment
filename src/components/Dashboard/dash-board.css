@@ -1,8 +1,7 @@
 
 .dashboard-wrapper {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .content-wrapper{
     padding: 20px ;
@@ -12,16 +11,10 @@
 .information {
     display: flex;
 }
-
 .company-logo {
     margin:0 20px
 }
-.logo {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
-img{
+.logo,img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -31,8 +24,7 @@ img{
     padding:2px 15px;
     border-radius: 10px;
     color:red;
-    background-color: rgb(255, 208, 215);
-    
+    background-color: rgb(255, 208, 215);  
 }
 .para{
     letter-spacing: .4px;
@@ -48,11 +40,13 @@ img{
     font-size: 14px;
     color:grey;
 }
-@media only screen and (max-width:500px) {
 
+
+@media only screen and (max-width:500px) {
     .company-logo{
         display:none !important;
         border:2px solid red !important
     }
 
 }
+

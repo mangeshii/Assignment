@@ -1,0 +1,63 @@
+[
+    {
+        "status": "Not Selected by employeer",
+        "jobrole": "ReactJS Developer",
+        "company": "SwipeWire",
+        "location": "Pune, Maharashta",
+        "appliedOn": "15th July",
+        "url": "https://www.freepnglogos.com/uploads/company-logo-png/company-logo-transparent-png-19.png",
+        "salary": "$50k-70k",
+        "JobType": "Full-time",
+        "workingDays": "Monday to Friday",
+        "skills": "HTML ,CSS, JQuery, Html5, Web Designing",
+        "rating": "3.8"
+    },
+    {
+        "status": "Applied",
+        "jobrole": "Java Developer",
+        "company": "Dwellsmith",
+        "location": "Mumbai, Maharashta",
+        "appliedOn": "21st September",
+        "salary": "$100k-200k",
+        "JobType": "Intership",
+        "workingDays": "Monday to Friday",
+        "skills": "Java, HTML, CSS",
+        "rating": "4"
+    },
+    {
+        "status":"Pending",
+        "jobrole":"JavaScript Developer",
+        "company":"QuickSpace",
+        "location":"Banglore",
+        "appliedOn":"3rd August",
+        "salary":"$12k-20k",
+        "JobType":"Remote",
+        "workingDays":"Monday to Saturday",
+        "skills":"HTML ,CSS, JQuery, JS, Bootstrap,",
+        "rating":"4.8"
+    },
+    {
+        "status":"Employeer reached out",
+        "jobrole":"Python Developer",
+        "company":"InvestSpend",
+        "location":"Chennai",
+        "appliedOn":"29th November",
+        "salary":"$60k-70k",
+        "JobType":"Full-time",
+        "workingDays":"Monday to Friday",
+        "skills":"Python, Django , HTML, CSS",
+        "rating":"4.2"
+    },
+    {
+        "status":"Applied",
+        "jobrole":"C# Developer",
+        "company":"GameEight",
+        "location":"Nagpur, Maharashta",
+        "appliedOn":"6th December",
+        "salary":"$10k-12k",
+        "JobType":"Full-time",
+        "workingDays":"Monday to Friday",
+        "skills":"C++, C#",
+        "rating":"3"
+    }
+]

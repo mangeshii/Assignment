@@ -3,6 +3,7 @@ import logoo from "./logo.png"
 import CandidateData from "../../Json/Json"
 import { useEffect, useState } from "react"
 
+console.log(CandidateData)
 const Dashboard = () => {
     const [data, setData] = useState('')
 
@@ -49,7 +50,7 @@ const Dashboard = () => {
                                 <div className="information">
                                     <div className="company-logo">
                                         <div className="logo">
-                                            <img src={logoo} />
+                                            <img src={logoo} alt="company-logo"/>
                                         </div>
                                     </div>
                                     <div className="application-status container">

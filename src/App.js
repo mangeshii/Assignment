@@ -1,7 +1,7 @@
 
 import MainContainer from "./components/Main/main-container";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./components/Pages/Home"
+import Jobs from "./components/Pages/Jobs"
 import Saved from "./components/Pages/Saved"
 import Messages from "./components/Pages/Messages"
 import NavBar from "./components/Nav/navbar"
@@ -9,8 +9,8 @@ import NavBar from "./components/Nav/navbar"
 function App() {
   let component;
   switch (window.location.pathname) {
-    case "/home":
-      component = <Home />
+    case "/jobs":
+      component = <Jobs />
       break;
     case "/saved":
       component = <Saved />
@@ -18,8 +18,6 @@ function App() {
     case "/messages":
       component = <Messages />
       break
-
-
   }
 
   return (
@@ -29,7 +27,7 @@ function App() {
         <div className="App ">
           <Routes>
             <Route exact path="/" element={<MainContainer />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/jobs" element={<Jobs />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/messages" element={<Messages />} />
           </Routes>
@@ -41,6 +39,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 
