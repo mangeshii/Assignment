@@ -5,7 +5,8 @@ const CandidateData=
             jobrole:'ReactJS Developer',
             company:'SwipeWire',
             location:'Pune, Maharashta',
-            appliedOn:'15th July'
+            appliedOn:'15th July',
+            url:'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.freepnglogos.com%2Fuploads%2Fcompany-logo-png%2Fcompany-logo-transparent-png-19.png&imgrefurl=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Fcompany-logo-ideas&tbnid=caPTZXb0bRC4IM&vet=12ahUKEwiMmaf1vbX6AhVh83MBHeuGDvEQMygPegUIARDfAQ..i&docid=xCOoxBu7PidIeM&w=2272&h=1704&q=dummy%20company%20logo%20png&ved=2ahUKEwiMmaf1vbX6AhVh83MBHeuGDvEQMygPegUIARDfAQ'
         },
         {
             status:'Applied',

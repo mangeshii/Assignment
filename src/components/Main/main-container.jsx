@@ -8,16 +8,16 @@ const MainContainer = () => {
         <>
             <div className="main-container-wrapper ">
                 <NavBar />
-                <div className="wrapper">
-                    <div className="header container">
+                {/* <div className="wrapper">
+                    <div className="header">
                         <h2>My Jobs</h2>
-                    </div>
+                    </div> */}
                     <NavigationBar/>
                     <Dashboard/>
-                </div>
+                {/* </div> */}
 
-                <div>
-                </div>
+                {/* <div>
+                </div> */}
             </div>
         </>
     )

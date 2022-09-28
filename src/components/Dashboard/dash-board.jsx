@@ -1,16 +1,23 @@
 import "./dash-board.css"
 import logoo from "./logo.png"
 import CandidateData from "../../Json/Json"
+import { useEffect, useState } from "react"
 
 const Dashboard = () => {
+    const [data, setData] = useState('')
+
+    useEffect(() => {
+        setData(CandidateData)
+
+    }, [])
+
     return (
         <>
             <div className="dashboard-wrapper  ">
                 <div className="content-wrapper">
-                    {CandidateData.map((e) => {
+                    {data && data.map((e, i) => {
                         return (
-                            <>
-
+                            <div key={i}>
                                 <div className="information">
                                     <div className="company-logo">
                                         <div className="logo">
@@ -30,7 +37,7 @@ const Dashboard = () => {
                                     </div>
                                 </div>
                                 <hr />
-                            </>
+                            </div>
                         )
                     })}
 

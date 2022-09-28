@@ -1,14 +1,16 @@
-import "./navigationbar.css"
+import "./navigationbar.css";
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
+    
     return (
         <>
             <div className="navigation-wrapper">
-                <ul class="nav nav-tabs ">
-                    <li ><a href="#">Home</a></li>
-                    <li><a href="#">Menu 1</a></li>
-                    <li><a href="#">Menu 2</a></li>
-                    <li><a href="#">Menu 3</a></li>
+                <ul className="nav nav-tabs ">
+                    <li ><Link to="/home">Home</Link></li>
+                    <li><Link to="/">Applied</Link></li>
+                    <li><Link to="/saved">Saved</Link></li>
+                    <li><Link to="/messages">Messages</Link></li>
                 </ul>
             </div>
         </>
