@@ -23,14 +23,14 @@ const CandidateData=
             appliedOn:'3rd August'
         },
         {
-            status:'Applied',
+            status:'Employeer reached out',
             jobrole:'Python Developer',
             company:'InvestSpend',
             location:'Chennai',
             appliedOn:'29th November'
         },
         {
-            status:'Pending',
+            status:'Applied',
             jobrole:'C# Developer',
             company:'GameEight',
             location:'Nagpur, Maharashta',

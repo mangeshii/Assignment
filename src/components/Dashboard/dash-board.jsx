@@ -11,6 +11,34 @@ const Dashboard = () => {
 
     }, [])
 
+    const statusBgColorChange = (type) => {
+        switch (type) {
+            case 'Applied':
+                return '#eef1fe';
+            case 'Not Selected by employeer':
+                return '#FFEDED';
+            case 'Pending':
+                return '#FFFFE0';
+            case 'Employeer reached out':
+                return '#e4f7e6'
+            default:
+                return undefined
+        }
+    }
+    const statusTxtColorChange = (type) => {
+        switch (type) {
+            case 'Applied':
+                return '#2557a7';
+            case 'Not Selected by employeer':
+                return '#o1579b';
+            case 'Pending':
+                return '#f2a73d';
+            case 'Employeer reached out':
+                return '#1f662c'
+            default:
+                return undefined
+        }
+    }
     return (
         <>
             <div className="dashboard-wrapper  ">
@@ -26,7 +54,14 @@ const Dashboard = () => {
                                     </div>
                                     <div className="application-status container">
                                         <div className="status-wrapper">
-                                            <p className="status">{e.status}</p></div>
+                                            <p className="status" style={{
+                                                width: 'fit-content',
+                                                padding: '2px 15px',
+                                                borderRadius: '10px',
+                                                color: statusTxtColorChange(e.status),
+                                                backgroundColor: `${statusBgColorChange(e.status)}`,
+                                                fontWeight: 800
+                                            }}>{e.status}</p></div>
                                         <div className="job-role">
                                             <h5>{e.jobrole}</h5></div>
                                         <div className="company-name">
