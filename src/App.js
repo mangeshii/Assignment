@@ -7,12 +7,13 @@ import AppliedJobs from "./components/AppliedJobs/appliedJobs";
 import TrackApplication from './components/trackApplication/application';
 
 function App() {
+
   return (
     <>
       <NavBar />
       <Router>
         <Routes>
-          <Route exact path="/" element={<AppliedJobs/>} />
+          <Route exact path="/" element={<AppliedJobs />} />
           <Route path="/jobs" element={<RecommendedJobs />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/messages" element={<Messages />} />

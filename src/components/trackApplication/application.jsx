@@ -14,29 +14,29 @@ const TrackApplication = () => {
 
     useEffect(() => {
         var variable = []
-        if (element.status == 'Not Selected by employeer') {
+        if (element.status === 'Not Selected by employeer') {
             variable.push(['Not Selected', '#FFEDED', <ImCross />])
         }
-        else if (element.status == 'Applied') {
+        else if (element.status === 'Applied') {
             variable.push(['Pending...', '#FFFFE0'])
         }
         else {
             variable.push(['Selected', '#e4f7e6', <FcApproval />])
         }
         setStatus(variable)
-    }, [])
+    }, [element.status])
 
 
     return (
         <>
-            <div className="track-wrapper">
-                <div className="header job-header container">
-                    <h2>Applied Jobs</h2>
+            <div className='navlink-wrapper'>
+                <div className='text'>
+                    <h5>Track Application</h5>
                 </div>
                 <NavigationBar />
             </div>
 
-            <div className="container track-container">
+            <div className="track-container">
                 <div className="tracker">
                     <div className="com-info">
                         <h4>{element.jobrole}</h4>
@@ -46,7 +46,7 @@ const TrackApplication = () => {
                     {status && status.map((i, e) => {
                         return (
                             <div key={e} >
-                                <Card className="card " style={{ backgroundColor: '#e4f7e6', margin:'0' }}>
+                                <Card className="card " style={{ backgroundColor: '#e4f7e6', margin: '0' }}>
                                     <Card.Body className="card-bodyy">
                                         <FcApproval className="status-icon" />
                                         <Card.Title className="title">
@@ -88,9 +88,9 @@ const TrackApplication = () => {
                             </div>
                         )
                     })}
-
-
                 </div>
+                    
+
             </div>
 
         </>

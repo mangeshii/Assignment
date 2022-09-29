@@ -1,8 +1,7 @@
 .tracker {
     max-width: 1000px !important;
     width:1000px;
-    padding:0px 20px
-
+    padding:0px 20px;
 }
 .track-container{
     display: flex;
@@ -11,7 +10,6 @@
 .title {
     display: flex;
     flex-direction: column;
-
 }
 .app-status{
     font-size: 17px;
@@ -47,4 +45,20 @@
 .cross{
     color:red;
     font-size: 15px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+.text h5{
+    width:1000px;
+    font-size: 35px;
+    padding:20px 0 0 20px;
+}
+@media only screen and (max-width:500px) {
+    .text h5{
+        font-size: 25px;
+        margin-bottom:5px ;
+    }
 }

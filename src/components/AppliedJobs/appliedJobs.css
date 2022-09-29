@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* border:2px solid red */
 }
 .jobs-header{
     width:1000px;
     max-width: 1000px !important;
-    /* border:2px solid purple */
 }
 .content-wrapper{
     padding: 30px 0px ;  
@@ -33,6 +31,7 @@
 .para{
     letter-spacing: .4px;
     font-size: 16px;
+    line-height: 25px;
 }
 .status{
     font-size: 15px;
@@ -49,13 +48,18 @@
     text-decoration: none;
     color: black;   
 }
-.appliedjob-header{
+.applied-head{
     margin-top: 30px;
 }
-
+.text h5{
+    margin: 20px 0px 30px;
+}
 @media only screen and (max-width:500px) {
     .company-logo{
         display:none !important;
     }
-
+    .text h5{
+        font-size: 25px;
+        margin-bottom:5px ;
+    }
 }

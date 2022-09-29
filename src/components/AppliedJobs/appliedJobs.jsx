@@ -1,17 +1,10 @@
 import "./appliedJobs.css"
 import logoo from "./logo.png"
 import CandidateData from "../../Json/Json"
-import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom';
 import NavigationBar from "../Navigation/navigationbar"
 
 const AppliedJobs = () => {
-    const [data, setData] = useState('')
-
-    useEffect(() => {
-        setData(CandidateData)
-
-    }, [])
 
     const statusBgColorChange = (type) => {
         switch (type) {
@@ -37,18 +30,19 @@ const AppliedJobs = () => {
                 return undefined
         }
     }
+    
     return (
         <>
-            <div className="dashboard-wrapper container">
+            <div className='navlink-wrapper'>
+                <div className='text'>
+                    <h5>Applied Jobs</h5>
+                </div>
+                <NavigationBar />
+            </div>
+            <div className="dashboard-wrapper ">
                 <div className="jobs-header container">
-                    <div className="nav-controller ">
-                        <div className="header ">
-                            <h2>Applied Jobs</h2>
-                        </div>
-                        <NavigationBar />
-                    </div>
                     <div className="content-wrapper">
-                        {data && data.map((e, i) => {
+                        {CandidateData && CandidateData.map((e, i) => {
                             return (
                                 <div key={i}>
                                     <div className="information">

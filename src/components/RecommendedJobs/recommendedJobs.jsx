@@ -10,18 +10,18 @@ import NavigationBar from '../Navigation/navigationbar';
 const RecommendedJobs = () => {
     return (
         <>
-            <div className="jobs-wrapper container">
+            <div className='navlink-wrapper'>
+                <div className='text'>
+                    <h5>Jobs</h5>
+                </div>
+                <NavigationBar />
+            </div>
+            <div className="jobs-wrapper ">
                 <div className="jobs-header container ">
-                    <div className="nav-controller ">
-                        <div className="header ">
-                            <h2>Jobs</h2>
-                        </div>
-                        <NavigationBar />
-                    </div>
-                    {CandidateData && CandidateData.map((e) => {
+                    {CandidateData && CandidateData.map((e,i) => {
                         return (
-                            <>
-                                <div className='card-container '>
+                        
+                                <div className='card-container ' key={i}>
                                     <Card className='cardd' style={{ margin: '0' }}>
                                         <Card.Body>
                                             <Card.Title>{e.jobrole}</Card.Title>
@@ -37,7 +37,7 @@ const RecommendedJobs = () => {
                                         </Card.Body>
                                     </Card>
                                 </div>
-                            </>
+                            
                         )
                     })}
                 </div>

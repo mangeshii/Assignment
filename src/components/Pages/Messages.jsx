@@ -1,13 +1,14 @@
 import NavigationBar from "../Navigation/navigationbar"
 
-const Messages=()=>{
-    return(
-        <div className="wrapper container">
-        <div className="header ">
-            <h2>Message</h2>
+const Messages = () => {
+    return (
+        <div className='navlink-wrapper'>
+            <div className='text'>
+                <h5>Message Page</h5>
+            </div>
+            <NavigationBar />
         </div>
-        <NavigationBar/>
-    </div>
+
     )
 }
 export default Messages

@@ -41,6 +41,18 @@
 .skill {
     font-size: 15px;
 }
+.reccom-header{
+    margin-top: 30px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.text h5{
+    width:1000px;
+    font-size: 35px;
+    padding:20px 0 0 20px
+}
 @media only screen and (max-width:786px) {
     .mb-1 {
         display: none;
