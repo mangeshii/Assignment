@@ -6,7 +6,13 @@
     color: black;
     font-weight: 700;
 }
-
+.jobs-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.h h2{
+    margin-left: 10px;
+}
 .location,
 .company {
     font-weight: 400 !important;
@@ -49,7 +55,6 @@
     .mb-1 {
         display: none;
     }
-
     .jobtype,
     .salary,
     .working-days {
@@ -57,5 +62,4 @@
         padding: 2px 10px;
 
     }
-
 }

@@ -1,11 +1,11 @@
-import "./dash-board.css"
+import "./appliedJobs.css"
 import logoo from "./logo.png"
 import CandidateData from "../../Json/Json"
 import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom';
 import NavigationBar from "../Navigation/navigationbar"
 
-const Dashboard = () => {
+const AppliedJobs = () => {
     const [data, setData] = useState('')
 
     useEffect(() => {
@@ -39,8 +39,8 @@ const Dashboard = () => {
     }
     return (
         <>
-            <div className="header container">
-                <h2>My Jobs</h2>
+            <div className="header job-header container">
+                <h2>Applied Jobs</h2>
             </div>
             <NavigationBar />
             <div className="dashboard-wrapper">
@@ -85,4 +85,4 @@ const Dashboard = () => {
         </>
     )
 }
-export default Dashboard
+export default AppliedJobs

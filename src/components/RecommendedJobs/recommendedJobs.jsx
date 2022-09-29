@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import "./Jobs.css"
+import "./recommendedJobs.css"
 import CandidateData from '../../Json/Json';
 import { HiStar } from "react-icons/hi";
 import { BiMoney } from "react-icons/bi"
@@ -7,22 +7,22 @@ import { AiOutlineClockCircle } from 'react-icons/ai'
 import { RiHandbagFill } from 'react-icons/ri'
 import NavigationBar from '../Navigation/navigationbar';
 
-const Home = () => {
+const RecommendedJobs = () => {
     return (
         <>
-            <div className="wrapper">
-                <div className="header container">
-                    <div className="wrapper">
-                        <div className="header container">
+            <div className="jobs-wrapper">
+                <div className="header jobs-header container">
+                    <div className="same-dis">
+                        <div className="h ">
                             <h2>Jobs</h2>
-                        </div>
                         <NavigationBar />
+                        </div>
                     </div>
                     {CandidateData && CandidateData.map((e) => {
                         return (
                             <>
-                                <div className='card-container container'>
-                                    <Card >
+                                <div className='card-container'>
+                                    <Card className='cardd' style={{ margin:'0'}}>
                                         <Card.Body>
                                             <Card.Title>{e.jobrole}</Card.Title>
                                             <Card.Subtitle className="mb-2 company">{e.company + "  "}
@@ -40,15 +40,15 @@ const Home = () => {
                             </>
                         )
                     })}
-
                 </div>
+
             </div>
         </>
     )
 
 
 }
-export default Home
+export default RecommendedJobs
 
 
 

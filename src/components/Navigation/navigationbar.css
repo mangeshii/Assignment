@@ -4,10 +4,9 @@ ul li a{
     margin-right: 60px;
 }
 ul li{
-    padding:20px
+    padding:20px 
 }
 .nav-tabs {
-    max-width: 1000px;
     width:1000px;
   
 }
@@ -19,6 +18,11 @@ ul li{
     display: none;
 }
 
+@media only screen and (max-width:1000px){
+    ul li a{
+        margin-right: 20px;
+    } 
+}
 @media only screen and (max-width:768px) {
     .icon{
         display:block;
@@ -29,19 +33,20 @@ ul li{
     }
     .nav-tabs{
         display: flex;
-        justify-content: space-between;
     }
-    ul li span{
+    ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding:0px !important
     }
-    ul li a{
-        margin-right: 0;
+    ul li{
+        padding-top:0;
+        padding-bottom:0;
+
     }
-    
 }
 
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:390px) {
     .nav-tabs{
         padding: 0% !important;
 

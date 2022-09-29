@@ -8,7 +8,7 @@ import { AiOutlineSave } from 'react-icons/ai'
 const NavigationBar = () => {
     return (
         <>
-            <div className="navigation-wrapper">
+            <div className="navigation-wrapper  ">
                 <ul className="nav nav-tabs ">
                     <li><Link to="/jobs">
                         <span className="icon"><AiOutlineHome /></span>

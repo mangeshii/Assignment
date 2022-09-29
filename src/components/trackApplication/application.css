@@ -1,9 +1,13 @@
 .tracker {
-    width: 1000px !important;
-    max-width: 1000px;
-    margin: 10px auto
-}
+    max-width: 1000px !important;
+    width:1000px;
+    padding:0px 20px
 
+}
+.track-container{
+    display: flex;
+    justify-content: center;  
+}
 .title {
     display: flex;
     flex-direction: column;
@@ -14,7 +18,7 @@
     margin-bottom: 8px;
 }
 .card {
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 .card-bodyy {
@@ -31,7 +35,7 @@
     margin-right: 10px;
 }
 .com-info{
-    margin-left: 20px;
+    padding:20px 0px
 }
 .p1,.p2{
     margin:0px;
@@ -41,5 +45,6 @@
 
 }
 .cross{
-    color:red
+    color:red;
+    font-size: 15px;
 }
