@@ -1,37 +1,23 @@
-
-import MainContainer from "./components/Main/main-container";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Jobs from "./components/Pages/Jobs"
+import Jobs from "./components/Jobs/Jobs"
 import Saved from "./components/Pages/Saved"
 import Messages from "./components/Pages/Messages"
 import NavBar from "./components/Nav/navbar"
+import Dashboard from "./components/Dashboard/dash-board";
+import TrackApplication from './components/trackApplication/application';
 
 function App() {
-  let component;
-  switch (window.location.pathname) {
-    case "/jobs":
-      component = <Jobs />
-      break;
-    case "/saved":
-      component = <Saved />
-      break
-    case "/messages":
-      component = <Messages />
-      break
-  }
-
   return (
     <>
       <NavBar />
       <Router>
-        <div className="App ">
-          <Routes>
-            <Route exact path="/" element={<MainContainer />} />
-            <Route path="/jobs" element={<Jobs />} />
-            <Route path="/saved" element={<Saved />} />
-            <Route path="/messages" element={<Messages />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route exact path="/" element={<Dashboard/>} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/saved" element={<Saved />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/track_application/:id" element={<TrackApplication />} />
+        </Routes>
       </Router>
 
     </>

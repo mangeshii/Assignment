@@ -1,0 +1,45 @@
+.tracker {
+    width: 1000px !important;
+    max-width: 1000px;
+    margin: 10px auto
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+}
+.app-status{
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.card {
+    margin: 20px;
+}
+
+.card-bodyy {
+    display: flex;
+}
+
+.a-date {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.status-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.com-info{
+    margin-left: 20px;
+}
+.p1,.p2{
+    margin:0px;
+    font-size: 16px;
+    letter-spacing: .2px;
+    color:rgb(116, 111, 111)
+
+}
+.cross{
+    color:red
+}
