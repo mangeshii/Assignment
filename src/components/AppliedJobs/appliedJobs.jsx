@@ -39,47 +39,52 @@ const AppliedJobs = () => {
     }
     return (
         <>
-            <div className="header job-header container">
-                <h2>Applied Jobs</h2>
-            </div>
-            <NavigationBar />
-            <div className="dashboard-wrapper">
-                <div className="content-wrapper">
-                    {data && data.map((e, i) => {
-                        return (
-                            <div key={i}>
-                                <div className="information">
-                                    <div className="company-logo">
-                                        <div className="logo">
-                                            <img src={logoo} alt="company-logo" />
+            <div className="dashboard-wrapper container">
+                <div className="jobs-header container">
+                    <div className="nav-controller ">
+                        <div className="header ">
+                            <h2>Applied Jobs</h2>
+                        </div>
+                        <NavigationBar />
+                    </div>
+                    <div className="content-wrapper">
+                        {data && data.map((e, i) => {
+                            return (
+                                <div key={i}>
+                                    <div className="information">
+                                        <div className="company-logo">
+                                            <div className="logo">
+                                                <img src={logoo} alt="company-logo" />
+                                            </div>
+                                        </div>
+                                        <div className="application-status container">
+                                            <div className="status-wrapper">
+                                                <p className="status" style={{
+                                                    width: 'fit-content',
+                                                    padding: '2px 15px',
+                                                    borderRadius: '10px',
+                                                    color: statusTxtColorChange(e.status),
+                                                    backgroundColor: `${statusBgColorChange(e.status)}`,
+                                                    fontWeight: 800
+                                                }}>{e.status}</p></div>
+                                            <div className="job-role">
+                                                <Link to={`/track_application/${e.id}`}> <h5>{e.jobrole}</h5></Link></div>
+                                            <div className="company-name">
+                                                <p className="para">{e.company}</p></div>
+                                            <div className="location">
+                                                <p className="para">{e.location} </p></div>
+                                            <div className="applied-on"><p>{`Applied on ${e.appliedOn}`}</p></div>
                                         </div>
                                     </div>
-                                    <div className="application-status container">
-                                        <div className="status-wrapper">
-                                            <p className="status" style={{
-                                                width: 'fit-content',
-                                                padding: '2px 15px',
-                                                borderRadius: '10px',
-                                                color: statusTxtColorChange(e.status),
-                                                backgroundColor: `${statusBgColorChange(e.status)}`,
-                                                fontWeight: 800
-                                            }}>{e.status}</p></div>
-                                        <div className="job-role">
-                                            <Link to={`/track_application/${e.id}`}> <h5>{e.jobrole}</h5></Link></div>
-                                        <div className="company-name">
-                                            <p className="para">{e.company}</p></div>
-                                        <div className="location">
-                                            <p className="para">{e.location} </p></div>
-                                        <div className="applied-on"><p>{`Applied on ${e.appliedOn}`}</p></div>
-                                    </div>
+                                    <hr />
                                 </div>
-                                <hr />
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
 
 
+                    </div>
                 </div>
+
             </div>
 
         </>

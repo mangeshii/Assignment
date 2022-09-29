@@ -10,19 +10,19 @@ import NavigationBar from '../Navigation/navigationbar';
 const RecommendedJobs = () => {
     return (
         <>
-            <div className="jobs-wrapper">
-                <div className="header jobs-header container">
-                    <div className="same-dis">
-                        <div className="h ">
+            <div className="jobs-wrapper container">
+                <div className="jobs-header container ">
+                    <div className="nav-controller ">
+                        <div className="header ">
                             <h2>Jobs</h2>
-                        <NavigationBar />
                         </div>
+                        <NavigationBar />
                     </div>
                     {CandidateData && CandidateData.map((e) => {
                         return (
                             <>
-                                <div className='card-container'>
-                                    <Card className='cardd' style={{ margin:'0'}}>
+                                <div className='card-container '>
+                                    <Card className='cardd' style={{ margin: '0' }}>
                                         <Card.Body>
                                             <Card.Title>{e.jobrole}</Card.Title>
                                             <Card.Subtitle className="mb-2 company">{e.company + "  "}
@@ -49,8 +49,4 @@ const RecommendedJobs = () => {
 
 }
 export default RecommendedJobs
-
-
-
-
 

@@ -1,17 +1,15 @@
-.card-container {
-    margin-top: 30px;
-}
-
-.rating {
-    color: black;
-    font-weight: 700;
-}
 .jobs-wrapper{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.h h2{
-    margin-left: 10px;
+.jobs-header{
+    width:1000px;
+    max-width: 1000px !important;
+}
+.card-container{
+    margin-top: 20px;
 }
 .location,
 .company {
@@ -19,12 +17,10 @@
     line-height: 10px;
     letter-spacing: .2px;
 }
-
 .ms {
     color: rgb(129, 122, 122);
     margin-bottom: 3px;
 }
-
 .jobtype,
 .salary,
 .working-days {
@@ -42,15 +38,9 @@
     margin: 10px 0px;
     flex-wrap: wrap;
 }
-
-.money-icon {
-    font-size: 20px;
-}
-
 .skill {
     font-size: 15px;
 }
-
 @media only screen and (max-width:786px) {
     .mb-1 {
         display: none;
