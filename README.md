@@ -3,7 +3,7 @@
 
 ### DEMO LINK
 
-https://gameeight.netlify.app/
+https://talentwise.netlify.app/
 
 ### Setup and Running
 
