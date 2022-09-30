@@ -2,7 +2,7 @@
 
 ### DEMO LINK
 
-Access my site at 
+Access my site at https://gameeight.netlify.app/
 
 ### Setup and Running
 
