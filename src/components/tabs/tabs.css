@@ -6,24 +6,27 @@
 .nav-tabs {
     width: 1000px;
     max-width: 1000px !important;
-    display: flex;
-    justify-content: space-between;
     padding: 20px ;
-    margin:0px 20px;
+    list-style: none;
+}
+
+ul li {
+    color:black !important;
+    text-align: center;
 }
 
 ul {
     display: flex;
+    color:black !important;
 }
 ul li a.active{
-    background-color: #eef1fe;
-    padding:7px 14px;
-    border-radius: 4px;
+    font-weight: bold;
 }
 ul li a {
     text-decoration: none;
     color: black;
     margin-left: 15px;
+    padding: 10px 0px !important;
 }
 ul li a:hover{
     color:black;
@@ -43,9 +46,10 @@ ul li a:hover{
         display: none;
     }
     .nav-tabs{
-        padding: 0px 40px 15px ;
+        padding: 0px 40px 15px 20px !important;
     }
     ul li a.active{
-        padding:0   
+        padding:0   ;
+        padding-bottom: 0;  
     }
 }

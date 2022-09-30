@@ -1,10 +1,11 @@
 import "./appliedJobs.css"
-import logoo from "./logo.png"
-import CandidateData from "../../Json/Json"
 import { Link } from 'react-router-dom';
-import NavigationBar from "../Navigation/navigationbar"
+import { useContext } from "react";
+import NavigationBar from "../tabs/tabs"
+import {CandidateContext} from '../../context/context';
 
 const AppliedJobs = () => {
+    const candidateData = useContext(CandidateContext)
 
     const statusBgColorChange = (type) => {
         switch (type) {
@@ -42,13 +43,13 @@ const AppliedJobs = () => {
             <div className="dashboard-wrapper ">
                 <div className="jobs-header container">
                     <div className="content-wrapper">
-                        {CandidateData && CandidateData.map((e, i) => {
+                        {candidateData && candidateData.map((e, i) => {
                             return (
                                 <div key={i}>
                                     <div className="information">
                                         <div className="company-logo">
                                             <div className="logo">
-                                                <img src={logoo} alt="company-logo" />
+                                                <img src={e.url} alt="company-logo" />
                                             </div>
                                         </div>
                                         <div className="application-status container">

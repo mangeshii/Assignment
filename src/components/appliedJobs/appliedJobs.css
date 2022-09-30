@@ -53,6 +53,8 @@
 }
 .text h5{
     margin: 20px 0px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 @media only screen and (max-width:500px) {
     .company-logo{

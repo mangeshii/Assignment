@@ -12,7 +12,7 @@ const NavBar = () => {
 
             <Navbar collapseOnSelect expand="md" className="navbar">
                 <Container>
-                    <Navbar.Brand href="/"  >GAMEEIGHT</Navbar.Brand>
+                    <Navbar.Brand href="/">TALENT WISE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">

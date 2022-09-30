@@ -1,16 +1,17 @@
-import "./application.css"
-import NavigationBar from "../Navigation/navigationbar"
-import CandidateData from "../../Json/Json"
+import "./trackApplication.css"
+import Tabs from "../tabs/tabs"
 import { useParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import { FcApproval } from 'react-icons/fc'
 import { ImCross } from 'react-icons/im'
-import { useState, useEffect } from "react";
+import { useState, useEffect ,useContext} from "react";
+import {CandidateContext} from '../../context/context';
 
 const TrackApplication = () => {
     const [status, setStatus] = useState('')
+    const candidateData= useContext(CandidateContext)
     const { id } = useParams();
-    const element = CandidateData.find(e => e.id === id)
+    const element = candidateData.find(e => e.id === id)
 
     useEffect(() => {
         var variable = []
@@ -33,7 +34,7 @@ const TrackApplication = () => {
                 <div className='text'>
                     <h5>Track Application</h5>
                 </div>
-                <NavigationBar />
+                <Tabs/>
             </div>
 
             <div className="track-container">

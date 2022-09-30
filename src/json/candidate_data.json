@@ -10,7 +10,8 @@
         "JobType": "Full-time",
         "workingDays": "Monday to Friday",
         "skills": "HTML ,CSS, JQuery, Html5, Web Designing",
-        "rating": "3.8"
+        "rating": "3.8",
+        "url":"https://media.istockphoto.com/vectors/flat-hexagonal-cube-rocket-launching-technology-logo-brand-identity-vector-id1227650500?k=20&m=1227650500&s=612x612&w=0&h=HdOfo97yCCUTKfhcdrVk31gUdZCyEDP86zL3QHi5BeY="
     },
     {
         "id":"2",
@@ -23,7 +24,9 @@
         "JobType": "Intership",
         "workingDays": "Monday to Friday",
         "skills": "Java, HTML, CSS",
-        "rating": "4"
+        "rating": "4",
+        "url":"https://media.istockphoto.com/vectors/flat-hexagonal-cube-rocket-launching-technology-logo-brand-identity-vector-id1227650500?k=20&m=1227650500&s=612x612&w=0&h=HdOfo97yCCUTKfhcdrVk31gUdZCyEDP86zL3QHi5BeY="
+
     },
     {
         "id":"3",
@@ -36,7 +39,9 @@
         "JobType":"Remote",
         "workingDays":"Monday to Saturday",
         "skills":"HTML ,CSS, JQuery, JS, Bootstrap,",
-        "rating":"4.8"
+        "rating":"4.8",
+        "url":"https://media.istockphoto.com/vectors/flat-hexagonal-cube-rocket-launching-technology-logo-brand-identity-vector-id1227650500?k=20&m=1227650500&s=612x612&w=0&h=HdOfo97yCCUTKfhcdrVk31gUdZCyEDP86zL3QHi5BeY="
+
     },
     {
         "id":"4",
@@ -49,7 +54,9 @@
         "JobType":"Full-time",
         "workingDays":"Monday to Friday",
         "skills":"Python, Django , HTML, CSS",
-        "rating":"4.2"
+        "rating":"4.2",
+        "url":"https://media.istockphoto.com/vectors/flat-hexagonal-cube-rocket-launching-technology-logo-brand-identity-vector-id1227650500?k=20&m=1227650500&s=612x612&w=0&h=HdOfo97yCCUTKfhcdrVk31gUdZCyEDP86zL3QHi5BeY="
+
     },
     {
         "id":"5",
@@ -62,6 +69,8 @@
         "JobType":"Full-time",
         "workingDays":"Monday to Friday",
         "skills":"C++, C#",
-        "rating":"3"
+        "rating":"3",
+        "url":"https://media.istockphoto.com/vectors/flat-hexagonal-cube-rocket-launching-technology-logo-brand-identity-vector-id1227650500?k=20&m=1227650500&s=612x612&w=0&h=HdOfo97yCCUTKfhcdrVk31gUdZCyEDP86zL3QHi5BeY="
+
     }
 ]
