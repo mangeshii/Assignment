@@ -2,6 +2,7 @@
     height:150px;
     width:150px;
 }
+
 .image-cont h5{
     padding-top: 10px !important;
 
@@ -12,9 +13,11 @@
 .image-cont{
     display: flex;
     justify-content: center;
-    padding:20px;
+    padding:50px;
     flex-direction: column;
     align-items: center;
+
+    
 }
 .find-btn{
     padding:7px 30px;
