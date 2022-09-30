@@ -1,10 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext} from "react";
 import CandidateData from "../json/candidate_data.json"
 
 const CandidateContext=createContext();
 
 const CandidateState=(props)=>{
-    const [state,setState]=useState(CandidateData)
+    const state=CandidateData
 
     return(
         <CandidateContext.Provider value={state}>
